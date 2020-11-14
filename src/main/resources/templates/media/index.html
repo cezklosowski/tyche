@@ -16,6 +16,13 @@
             </td>
         </tr>
     </table>
+
+    <ul>
+        <li th:each="file : ${files}">
+            <a th:href="${'#' + file.uuid}" th:text="${file.fileName}" />
+        </li>
+    </ul>
+
 </form>
 </body>
 </html>
